@@ -2,9 +2,9 @@
 #define YELLOW1 4
 #define GREEN1 5
 
-#define RED2 3
-#define YELLOW2 4
-#define GREEN2 5
+#define RED2 6
+#define YELLOW2 7
+#define GREEN2 8
 
 void setup() {
   pinMode(RED1, OUTPUT);
@@ -36,6 +36,10 @@ void loop() {
   digitalWrite(GREEN1, HIGH);
   digitalWrite(RED2, HIGH);
   delay(7000);
-  digitalWrite(RED2, LOW);
+  
+  digitalWrite(YELLOW1, HIGH);
   digitalWrite(GREEN1, LOW);
+  delay(3000);
+  digitalWrite(RED2, LOW);
+  digitalWrite(YELLOW1, LOW);
 }

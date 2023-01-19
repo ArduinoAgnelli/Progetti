@@ -36,6 +36,10 @@ void loop() {
   digitalWrite(GREEN1, HIGH);
   digitalWrite(RED2, HIGH);
   delay(7000);
-  digitalWrite(RED2, LOW);
+  
+  digitalWrite(YELLOW1, HIGH);
   digitalWrite(GREEN1, LOW);
+  delay(3000);
+  digitalWrite(RED2, LOW);
+  digitalWrite(YELLOW1, LOW);
 }

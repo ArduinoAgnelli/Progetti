@@ -24,9 +24,9 @@ int DO[] = {DO4, SOL4, MI5};
 int FA[] = {FA4, LA4, DO4};
 
 #define BUZZER 2
-#define N1 2
-#define N2 2
-#define N3 2
+#define N1 3
+#define N2 4
+#define N3 5
 
 void setup() {
   pinMode(BUZZER, OUTPUT);

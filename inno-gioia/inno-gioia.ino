@@ -21,11 +21,10 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 0; i < 15; i++) {
+  for (int i = 0; i < sizeof(note) / 2; i++) {
     tone(BUZZER, note[i]);
     delay(pause[i]);
     noTone(BUZZER);
   }
-  
   delay(1000);
 }

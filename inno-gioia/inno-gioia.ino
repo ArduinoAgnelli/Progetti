@@ -1,17 +1,18 @@
-#define DO 261
-#define RE 293
-#define MI 329
-#define FA 349
-#define SOL 392
-#define LA 440
-#define SI 493
-#define DO2 523
+#define DO4 261
+#define RE4 293
+#define MI4 329
+#define FA4 349
+#define SOL4 392
+#define LA4 440
+#define SI4 493
+#define DO5 523
+#define RE5 587
 
-#define TONO 500
-#define SEMITONO 250
+#define CROMA 500
+#define SEMICROMA 250
 
-string note = [SI, SI, DO, RE, RE, DO, SI, LA, SOL, SOL, LA, SI, LA, SOL, SOL];
-string pause = [TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO, TONO+SEMITONO, SEMITONO, TONO*2];
+int note = [SI4, SI4, DO5, RE5, RE5, DO5, SI4, LA4, SOL4, SOL4, LA4, SI4, LA4, SOL4, SOL4];
+int pause = [CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA+SEMICROMA, SEMICROMA, CROMA*2];
 
 #define BUZZER 2
 

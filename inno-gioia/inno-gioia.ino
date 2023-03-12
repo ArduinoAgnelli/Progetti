@@ -11,8 +11,8 @@
 #define CROMA 500
 #define SEMICROMA 250
 
-int note = [SI4, SI4, DO5, RE5, RE5, DO5, SI4, LA4, SOL4, SOL4, LA4, SI4, LA4, SOL4, SOL4];
-int pause = [CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA+SEMICROMA, SEMICROMA, CROMA*2];
+int note[] = {SI4, SI4, DO5, RE5, RE5, DO5, SI4, LA4, SOL4, SOL4, LA4, SI4, LA4, SOL4, SOL4};
+int pause[] = {CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA, CROMA+SEMICROMA, SEMICROMA, CROMA*2};
 
 #define BUZZER 2
 
@@ -21,9 +21,11 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 0; i < 15, i++) {
+  for (int i = 0; i < 15; i++) {
     tone(BUZZER, note[i]);
     delay(pause[i]);
-    NoTone(BUZZER);
+    noTone(BUZZER);
   }
+  
+  delay(1000);
 }
